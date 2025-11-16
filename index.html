@@ -45,22 +45,12 @@
     // Auto-fire confetti on page load
     window.addEventListener('load', () => {
       confetti({
-        particleCount: 500,
-        spread: 200,
+        particleCount: 1000,
+        spread: 150,
         origin: { y: 0.6 }
       });
     });
 
-    // Optional button trigger
-    const btn = document.getElementById('celebrateBtn');
-    if (btn) {
-      btn.addEventListener('click', () => {
-        confetti({
-          particleCount: 300,
-          spread: 100,
-          origin: { y: 0.6 }
-        });
-      });
     }
   </script>
     

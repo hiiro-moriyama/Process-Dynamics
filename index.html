@@ -33,9 +33,23 @@
   * Author: Hiiro Moriyama
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  <title>Harvard Celebration</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
-  
+    <script>
+    // Auto-fire confetti on page load
+    window.addEventListener('load', () => {
+      confetti({
+        particleCount: 500,
+        spread: 200,
+        origin: { y: 0.6 }
+      });
+    });
+    }
+  </script>
 
 <body class="index-page">
     

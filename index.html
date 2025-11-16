@@ -52,6 +52,18 @@
   </script>
 
 <body class="index-page">
+
+    <script>
+    // Auto-fire confetti on page load
+    window.addEventListener('load', () => {
+      confetti({
+        particleCount: 500,
+        spread: 200,
+        origin: { y: 0.6 }
+      });
+    });
+    }
+  </script>
     
   <header id="header" class="header fixed-top">
 
